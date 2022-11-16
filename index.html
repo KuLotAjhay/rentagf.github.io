@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- main CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>RentAGF</title>
+</head>
+
+<body>
+    <div class="navbar navbar-fixed-top container-fluid" id="navbar">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle navbar-default" data-toggle="collapse" data-target="#myNavbar">
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>
+         <span class="icon-bar"></span>                        
+       </button>
+            <a class="navbar-brand">Rent<span class="a">A</span><span class="name">GF</span></a>
+        </div>
+        <div class="collapse navbar-right navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="#home_Container">Home</a></li>
+                <li><a href="#pricing_Container">Avail Me</a></li>
+                <li><a href="#more_Container">More</a></li>
+                <li><a href="#contact_Container">ContactUs</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--Home Section-->
+    <section class="home_Container" id="home_Container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="assets/images/d408ca066db36991a541bb9ed899aa4f.jpg">
+                    <h3>Yuna</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                    <a href="#">Avail Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="assets/images/29657-7-anime-girl-transparent.png">
+                    <h3>Ina</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                    <a href="#">Avail Me</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <img src="assets/images/wp5328265.jpg">
+                    <h3>Sika</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste veritatis provident at.</p>
+                    <a href="#">Avail Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Pricing section-->
+    <section class="pricing_Container" id="pricing_Container">
+        <div class="top">
+            <h1>Plans & Pricing</h1>
+            <div class="toggle-btn">
+                <span style="margin: 0.8em;">Annually</span>
+            </div>
+            <label class="switch">
+            <input type="checkbox" id="checbox" onclick="check()" ; />
+            <span class="slider round"></span>
+          </label>
+            <span style="margin: 0.8em;">Monthly</span></div>
+        </div>
+        <!--Container-->
+        <div class="package-container">
+            <div class="packages">
+                <h1>Basic</h1>
+                <h2 class="text1">$9.99</h2>
+                <h2 class="text2">$119.99</h2>
+                <ul class="list">
+                    <li class="first">2000 Subscribers</li>
+                    <li>12,000 Emails/month</li>
+                    <li>Multi-User Accounts</li>
+                    <li>Email Support</li>
+                </ul>
+                <a href="#" class="button button1">Start Now</a>
+            </div>
+            <div class="packages">
+                <h1>Professional</h1>
+                <h2 class="text1">$19.99</h2>
+                <h2 class="text2">$239.99</h2>
+                <ul class="list">
+                    <li class="first">Basic +</li>
+                    <li>Landing Pages</li>
+                    <li>Pop-up Forms</li>
+                    <li>Premium Support</li>
+                </ul>
+                <a href="#" class="button button2">Start Now</a>
+            </div>
+            <div class="packages">
+                <h1>Master</h1>
+                <h2 class="text1">$29.99</h2>
+                <h2 class="text2">$359.99</h2>
+                <ul class="list">
+                    <li class="first">Professional +</li>
+                    <li>Marketing Automation</li>
+                    <li>Instagram Ads</li>
+                    <li>Facebook Ads</li>
+                </ul>
+                <a href="#" class="button button3">Start Now</a>
+            </div>
+        </div>
+    </section>
+    <section class="more_Container" id="more_Container">
+        <ul class="image-list-small">
+            <li>
+                <a href="#" style="background-image: url('assets/images/d408ca066db36991a541bb9ed899aa4f.jpg');"></a>
+                <div class="details">
+                    <h3><a href="#">In the subway</a></h3>
+                    <p class="image-author">Matt Stone</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" style="background-image: url('assets/images/29657-7-anime-girl-transparent.png');"></a>
+                <div class="details">
+                    <h3><a href="#">Industrial</a></h3>
+                    <p class="image-author">Earnest Leming</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" style="background-image: url('assets/images/wp5328265.jpg');"></a>
+                <div class="details">
+                    <h3><a href="#">When in Rome..</a></h3>
+                    <p class="image-author">Edward Flint</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" style="background-image: url('assets/images/wp5328265.jpg');"></a>
+                <div class="details">
+                    <h3><a href="#">Mountain Top</a></h3>
+                    <p class="image-author">Rick Alpine</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" style="background-image: url('assets/images/wp5328265.jpg');"></a>
+                <div class="details">
+                    <h3><a href="#">Vienna Adventure</a></h3>
+                    <p class="image-author">Stacy River</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" style="background-image: url('assets/images/wp5328265.jpg');"></a>
+                <div class="details">
+                    <h3><a href="#">Magnificent beach</a></h3>
+                    <p class="image-author">Frank Stone</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" style="background-image: url('assets/images/wp5328265.jpg');"></a>
+                <div class="details">
+                    <h3><a href="#">Magnificent beach</a></h3>
+                    <p class="image-author">Frank Stone</p>
+                </div>
+            </li>
+            <li>
+                <a href="#" style="background-image: url('assets/images/wp5328265.jpg');"></a>
+                <div class="details">
+                    <h3><a href="#">Magnificent beach</a></h3>
+                    <p class="image-author">Frank Stone</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section class="contact_Container" id="contact_Container">
+        <div class="contact-parent">
+            <div class="contact-child child1">
+                <p>
+                    <i class="fas fa-map-marker-alt"></i> Address <br />
+                    <span> Blank
+                 <br />
+                 Philippines, Rizal
+                 </span>
+                </p>
+                <p>
+                    <i class="fas fa-phone-alt"></i> Let's Talk <br />
+                    <span> 00000000</span>
+                </p>
+                <p>
+                    <i class=" far fa-envelope"></i> General Support <br />
+                    <span>contact123@example.com</span>
+                </p>
+            </div>
+            <div class="contact-child child2">
+                <div class="inside-contact">
+                    <h2>Contact Us</h2>
+                    <h3>
+                        <span id="confirm">
+                 </h3>
+                 <p>Name *</p>
+                 <input id="txt_name" type="text" Required="required">
+                 <p>Email *</p>
+                 <input id="txt_email" type="text" Required="required">
+                 <p>Phone *</p>
+                 <input id="txt_phone" type="text" Required="required">
+                 <p>Subject *</p>
+                 <input id="txt_subject" type="text" Required="required">
+                 <p>Message *</p>
+                 <textarea id="txt_message" rows="4" cols="20" Required="required" ></textarea>
+                 <input type="submit" id="btn_send" value="SEND">
+              </div>
+           </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+    <!--fontawesome kit-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,480 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: url(assets/images/anime-1661448612213-9440.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.navbar {
+    position: fixed;
+    transition: 1s;
+}
+
+.navbar-brand {
+    color: #000;
+    font-size: 50px;
+    font-family: Germania;
+    cursor: pointer;
+}
+
+.a {
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.name {
+    font-size: 50px;
+    color: #ff006a;
+}
+
+.icon-bar {
+    background-color: #000;
+}
+
+.nav .navbar-nav {
+    font-family: Lithos Pro;
+    padding: 10px 30px;
+}
+
+.nav li {
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ff006a;
+}
+
+.nav li :after {
+    content: '';
+    display: block;
+    border-bottom: 2px solid #38fd07;
+    transform: scaleX(0);
+    transition: .2s ease-in-out;
+}
+
+.nav li :hover:after {
+    transform: scaleX(1);
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 0, 55, 0.3);
+}
+
+body::-webkit-scrollbar {
+    width: 14px;
+}
+
+body::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(255, 0, 85, 0.5);
+    background: #501e27;
+}
+
+@media(max-width: 720px) {
+    body {
+        background-size: 100% 100%;
+    }
+    .navbar-collapse {
+        background: #501e27;
+    }
+}
+
+section {
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+
+/*--Home Section--*/
+
+.home_Container {
+    width: 1000px;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+}
+
+.home_Container .card {
+    position: relative;
+    cursor: pointer;
+}
+
+.home_Container .card .face {
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.home_Container .card .face.face1 {
+    position: relative;
+    background: rgba(32, 32, 32, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.home_Container .card:hover .face.face1 {
+    background: #232323;
+    transform: translateY(0);
+}
+
+.home_Container .card .face.face2 {
+    position: relative;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(255, 0, 64, 0.8);
+    transform: translateY(-100px);
+}
+
+.home_Container .card:hover .face.face2 {
+    transform: translateY(0);
+}
+
+.home_Container .card .face.face2 .content p {
+    margin: 0;
+    padding: 0;
+}
+
+.home_Container .card .face.face1 .content {
+    opacity: 10;
+    transition: 0.5s;
+}
+
+.home_Container .card:hover .face.face1 .content {
+    opacity: 1;
+}
+
+.home_Container .card .face.face1 .content img {
+    max-width: 100px;
+}
+
+.home_Container .card .face.face1 .content h3 {
+    margin: 10px 0 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.home_Container .card .face.face2 .content a {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.home_Container .card .face.face2 .content a:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+/*--Pricing CSS--*/
+
+.more_Container {
+    width: 100%;
+    padding-top: 200px;
+}
+
+.package-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.packages {
+    margin: 20px;
+    width: 300px;
+    padding-bottom: 1.5em;
+    height: 100%;
+    background-color: #00000070;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 19px 38px rgb(53, 94, 77), 0 15px 12px rgba(36, 216, 144, 0.2);
+    flex-wrap: wrap;
+    color: #f4f4f4;
+}
+
+.list li {
+    font-size: 20px;
+    list-style: none;
+    border-bottom: 1px solid #f4f4f4;
+    padding-inline-start: 0;
+    border-width: 1px;
+    padding: 10px;
+}
+
+.first {
+    margin-top: 40px;
+    border-top: 1px solid #f4f4f4;
+}
+
+.list {
+    width: 80%;
+}
+
+ol,
+ul {
+    padding: 0;
+}
+
+.button {
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 1.4em;
+    margin: 15px 15px;
+    border-radius: 50px;
+    color: #f4f4f4;
+    transition: all 0.3s ease 0s;
+}
+
+.button:hover {
+    transform: scale(1.2);
+}
+
+.button1 {
+    background-color: #0300cc9f;
+    box-shadow: 0 0 10px 0 #0300cc73 inset, 0 0 20px 2px #2500cc6b;
+}
+
+.button2 {
+    background-color: #ff00007c;
+    box-shadow: 0 0 10px 0 #df202077 inset, 0 0 20px 2px #9e06066b;
+}
+
+.button3 {
+    background-color: #68ff4281;
+    box-shadow: 0 0 10px 0 #62ff42b9 inset, 0 0 20px 2px #7eff4263;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input:checked+.slider {
+    background-color: #50bfe6;
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #50bfe6;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/*--More--*/
+
+.image-list-small {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1000px;
+    padding: 0;
+}
+
+.image-list-small li {
+    display: inline-block;
+    width: 200px;
+    margin: 0 12px 30px;
+}
+
+.image-list-small li>a {
+    display: block;
+    text-decoration: none;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 137px;
+    margin: 0;
+    padding: 0;
+    border: 4px solid #ffffff;
+    outline: 1px solid #d0d0d0;
+    box-shadow: 0 2px 1px #DDD;
+    transition: .25s;
+}
+
+.image-list-small li img {
+    width: 100%;
+    /* To make the images responsive */
+    height: auto;
+}
+
+.image-list-small li>a:hover {
+    transform: scale(1.1);
+    transition: .25s;
+}
+
+.image-list-small .details {
+    margin-top: 13px;
+}
+
+.image-list-small .details h3 {
+    display: block;
+    font-size: 14px;
+    margin: 0 0 3px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.image-list-small .details h3 a {
+    color: #303030;
+    text-decoration: none;
+}
+
+.image-list-small .details .image-author {
+    display: block;
+    color: #717171;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+}
+
+@media only screen and (max-wdith: 640px) {
+    .image-list-small {
+        max-width: 100%;
+    }
+    .image-list-small li>a {
+        width: 50%;
+    }
+}
+
+
+/*Contact*/
+
+.contact-parent {
+    background: #fff;
+    display: flex;
+    margin: 50px 0;
+}
+
+.contact-child {
+    display: flex;
+    flex: 1;
+    box-shadow: 0px 0px 10px -2px rgba(0, 0, 0, 0.75);
+}
+
+.child1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("assets/images/29657-7-anime-girl-transparent.png");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.child1 p {
+    padding-left: 20%;
+    font-size: 20px;
+    text-shadow: 0px 0px 2px #000;
+}
+
+.child1 p span {
+    font-size: 16px;
+    color: #9df2fd;
+}
+
+.child2 {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inside-contact {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.inside-contact h2 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.inside-contact h3 {
+    text-align: center;
+    font-size: 16px;
+    color: #0085e2;
+}
+
+.inside-contact input,
+.inside-contact textarea {
+    width: 100%;
+    background-color: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.48);
+    padding: 5px 10px;
+    margin-bottom: 20px;
+}
+
+.inside-contact input[type=submit] {
+    background-color: #000;
+    color: #fff;
+    transition: 0.2s;
+    border: 2px solid #000;
+    margin: 30px 0;
+}
+
+.inside-contact input[type=submit]:hover {
+    background-color: #fff;
+    color: #000;
+    transition: 0.2s;
+}
+
+@media screen and (max-width:991px) {
+    .contact-parent {
+        display: block;
+        width: 100%;
+    }
+    .child1 {
+        display: none;
+    }
+    .child2 {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("assets/images/29657-7-anime-girl-transparent.png");
+        background-size: cover;
+    }
+    .inside-contact input,
+    .inside-contact textarea {
+        background-color: #fff;
+    }
+}
